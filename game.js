@@ -1,11 +1,23 @@
-var question1 = prompt("Was I born in SF?");
-var question2 = prompt("Is my favorite food Pizza?");
-var question3 = prompt("Do I like to dip my fries in chocolate shakes?")
+var question1 = prompt('Was I born in SF?');
 
-console.log("Question 1 response:" + question1);
-console.log("Question 2 response:" + question2);
-console.log("Question 3 response:" + question3);
+if (question1.toUpperCase()==='YES' ) {
+	alert('Correct, I was born in SF');
+} else {
+	alert('Incorrect, I was born in SF');
+} 
 
-alert("Your answer to Question 1 was " + question1);
-alert("Your answer to Question 2 was " + question2);
-alert("Your answer to Question 3 was " + question3);
+var question2 = prompt('Is my favorite food Pizza?');
+
+if (question2.toUpperCase()==='YES' ){
+	alert('Correct, Pizza is great.');
+} else {
+	alert('Incorrect, Pizza is the best.');
+}
+
+var question3 = prompt('Do I dip my fries in chocolate shakes?');
+
+if (question3.toUpperCase()==='YES' ) {
+	alert('Correct, thank you for the intro Wendy\'s!');
+} else {
+	alert('It\'s wierd, but I do.');
+}
