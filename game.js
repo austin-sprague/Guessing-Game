@@ -11,31 +11,37 @@ var answers = ["YES", "Y", "NO", "N"];
 function ques1() {
   var question1 = prompt(questions[0]);
   if (question1.toUpperCase()=== answers[0] || question1.toUpperCase()===answers[1]) {
-  	one.innerHTML = '<p>Correct, I was born in SF.</p>'+'<p><img src="img/dudeomg.jpg" width="200" height="200"/></p>';
-  	correctAnswers++;
+  	one.className = 'correct';
+    one.innerHTML = '<p>Correct, I was born in SF.</p>'+'<p><img src="img/dudeomg.jpg" width="200" height="200"/></p>';
+    correctAnswers++;
 
   } else {
-  	one.innerHTML = 'Incorrect, I was born in SF';
+  	one.className = 'incorrect';
+    one.innerHTML = 'Incorrect, I was born in SF';
   }
 }
 
 function ques2() {
   var question2 = prompt(questions[1]);
   if (question2.toUpperCase()===answers[0] || question2.toUpperCase()===answers[1]){
-  	two.innerHTML = '<p>Correct, Pizza is great.</p>'+'<p><img src="img/dudeomg.jpg" width="200" height="200"/></p>';
-  	correctAnswers++;
+  	two.className = 'correct';
+    two.innerHTML = '<p>Correct, Pizza is great.</p>'+'<p><img src="img/dudeomg.jpg" width="200" height="200"/></p>';
+    correctAnswers++;
   } else {
-  	two.innerHTML = 'Incorrect, Pizza is the best.';
+  	two.className = 'incorrect';
+    two.innerHTML = 'Incorrect, Pizza is the best.';
   }
 }
 
 function ques3() {
   var question3 = prompt(questions[2]);
   if (question3.toUpperCase()===answers[0] || question3.toUpperCase()===answers[1]) {
-  	three.innerHTML = '<p>Correct, thank you for the intro Wendy\'s!</p>'+'<p><img src="img/dudeomg.jpg" width="200" height="200"/></p>';
-  	correctAnswers++;
+  	three.className = 'correct';
+    three.innerHTML = '<p>Correct, thank you for the intro Wendy\'s!</p>'+'<p><img src="img/dudeomg.jpg" width="200" height="200"/></p>';
+    correctAnswers++;
   } else {
-  	three.innerHTML = 'It\'s weird, but I do.';
+    three.className = 'incorrect';
+    three.innerHTML = 'It\'s weird, but I do.';
   }
 }
 

@@ -1,0 +1,19 @@
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+h4 {
+  font-size: 30;
+}
+
+p {
+  font-style: italic;
+}
